@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+	<script type="text/javascript" src="lesson6.js"></script>
+</head>
+<body >
+<div ng-controller='mainCtrl as mainCtrl'>
+ 	<div ng-controller='firstCtrl as firstCtrl'>
+ 		<div ng-controller='secondCtrl as secondCtrl'>
+ 		{{secondCtrl.myLesson}}
+ 		<button ng-click="mainCtrl.addLesson()">Add lesson</button>
+ 		</div>
+ 	</div>
+</div>
+</body>
+</html>
